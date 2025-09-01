@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fawazbinsaleem.github.io/portfolio/",
+  "homepage": "https://fawazbinsaleem.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
