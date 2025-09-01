@@ -18,7 +18,7 @@ function App() {
         
       </div>
       <p className="read-the-docs">
-        Spider-Man is on the loose!!
+        Spider-Man is on the loose :)
       </p>
     </>
   )
