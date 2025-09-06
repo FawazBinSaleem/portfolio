@@ -28,7 +28,7 @@ function App() {
         setCurrentLine((prev) => prev + currentMsg[charIndex]);
         charIndex++;
         setTimeout(typeLine, 25); 
-      } else {
+      } else { //hi
         
         setMessages((prev) => [...prev, currentMsg]);
         setCurrentLine("");
