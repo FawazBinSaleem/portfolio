@@ -3,7 +3,7 @@ import "../styles/App.css";
 function App() {
   const [messages, setMessages] = useState<string[]>([]);
   const [currentLine, setCurrentLine] = useState("");
-  const typingStarted = useRef(false); 
+  const typingStarted = useRef(false);  //hi
 
   useEffect(() => {
     if (typingStarted.current) return;
