@@ -1,0 +1,34 @@
+.project {
+  margin-bottom: 1rem;
+
+  .command {
+    display: block;
+    font-family: "IBM Plex Mono", monospace;
+    color: #e5e5e5;
+    margin-bottom: 0.2rem;
+
+    .prompt {
+      color: #ff0000; // Spider-Man red
+      margin-right: 0.3rem;
+    }
+
+    .project-link {
+      color: #ff0000; // Spider-Man red
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+
+      &:hover {
+        color: #1e90ff; // Spider-Man blue
+        text-shadow: 0 0 5px #1e90ff;
+      }
+    }
+  }
+
+  .tech {
+    margin-left: 1.5rem; // offset to appear below command
+    color: #999; // slightly dimmed terminal output style
+    font-size: 0.9rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic; // optional: make tech stack look like terminal output
+  }
+}
