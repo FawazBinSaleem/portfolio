@@ -1,0 +1,98 @@
+body {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+  padding: 0;
+  font-size: clamp(14px, 1.5vw, 18px); // scales font size with screen
+}
+
+a {
+  color: #ff0000; // Spider-Man red
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+
+  &:hover {
+    color: #1e90ff; // Spider-Man blue
+    text-shadow: 0 0 8px #1e90ff;
+  }
+}
+
+.terminal {
+  background: #111;
+  border: 2px solid #ff0000;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px #ff0000;
+  transition: all 0.3s ease;
+
+  .terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+
+    .title {
+      margin-left: auto;
+      color: #999;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* Small devices: phones */
+@media (max-width: 600px) {
+  .terminal {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff0000;
+
+    .terminal-header .title {
+      font-size: 0.70rem;
+    }
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium devices: tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .terminal {
+    width: 90%;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0000;
+
+    .terminal-header .title {
+      font-size: 0.8rem;
+    }
+  }
+
+  a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large devices: desktops */
+@media (min-width: 901px) {
+  .terminal {
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ff0000;
+
+    .terminal-header .title {
+      font-size: 0.9rem;
+    }
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
