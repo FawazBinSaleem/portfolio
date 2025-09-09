@@ -1,11 +1,17 @@
 import TerminalWindow from "./TerminalWindow";
-
+import "../styles/skills.scss";
 export default function Skills() {
   return (
     <TerminalWindow title="~/skills">
-      <p><b>Languages:</b> CSS, HTML, Java, JavaScript, Processing, Python, C, C#</p>
-      <p><b>Libraries & Frameworks:</b> React, React Testing Library, Flask</p>
-      <p><b>Tools & Software:</b> Git, GitHub, Docker, Notion, Postman, Pelican, Linux</p>
-    </TerminalWindow>
+  <div className="command"><span className="prompt">$</span> languages</div>
+  <p>CSS, HTML, Java, JavaScript, Processing, Python, C, C#</p>
+
+  <div className="command"><span className="prompt">$</span> frameworks</div>
+  <p>React, React Testing Library, Flask</p>
+
+  <div className="command"><span className="prompt">$</span> tools</div>
+  <p>Git, GitHub, Docker, Notion, Postman, Pelican, Linux</p>
+</TerminalWindow>
+
   );
 }
