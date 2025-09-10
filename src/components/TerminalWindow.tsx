@@ -3,11 +3,12 @@ import React from "react";
 type Props = {
   title: string;
   children: React.ReactNode;
+  className?: string; // <-- allow optional className
 };
 
-export default function TerminalWindow({ title, children }: Props) {
+export default function TerminalWindow({ title, children, className }: Props) {
   return (
-    <div className="terminal">
+    <div className={`terminal ${className || ""}`}>
       <div className="terminal-header">
         <span style={{ color: "#ff0000" }}>●</span>
         <span style={{ color: "#ffcc00" }}>●</span>

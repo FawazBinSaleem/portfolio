@@ -1,4 +1,4 @@
-.skills {
+.community {
   .command {
     font-family: "IBM Plex Mono", monospace;
     color: #e5e5e5;
@@ -11,16 +11,23 @@
   }
 
   .output {
-    margin-left: 1.5rem; // indent output
+    margin-left: 1.5rem; // indent to simulate typed output
     color: #999;
     font-family: "IBM Plex Mono", monospace;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
+    line-height: 1.5;
 
     .label {
       color: #1e90ff; // Spider-Man blue
       font-weight: 600;
       margin-right: 0.3rem;
+    }
+
+    b {
+      color: #ff0000; // highlight .devClub in red
+    }
+
+    div {
+      margin-bottom: 0.5rem;
     }
   }
 }
