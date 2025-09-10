@@ -1,24 +1,22 @@
-.skills {
+.education {
   .command {
     font-family: "IBM Plex Mono", monospace;
     color: #e5e5e5;
-    margin-bottom: 0.3rem;
 
     .prompt {
-      color: #ff0000; // Spider-Man red
+      color: #ff0000;
       margin-right: 0.3rem;
     }
   }
 
   .output {
-    margin-left: 1.5rem; // indent output
+    margin-left: 1.5rem;
     color: #999;
     font-family: "IBM Plex Mono", monospace;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
+    line-height: 1.5;
 
     .label {
-      color: #1e90ff; // Spider-Man blue
+      color: #1e90ff;
       font-weight: 600;
       margin-right: 0.3rem;
     }

@@ -1,14 +1,37 @@
 import TerminalWindow from "./TerminalWindow";
+import "../styles/Profile.scss";
 
 export default function Profile() {
   return (
-    <TerminalWindow title="~/profile">
-        <span className="prompt">$</span> <span className="highlight">whoami</span>
-      <p>
-        Enthusiastic Computer Science student with a strong foundation in programming,
-        data analysis, and problem-solving. Passionate about learning new technologies
-        and applying innovative solutions to real-world challenges.
-      </p>
+    <TerminalWindow title="~/profile" className="profile">
+      <div className="command">
+        <span className="prompt">$</span> whoami
+      </div>
+
+      <div className="output">
+        <p>Enthusiastic Computer Science student passionate about programming and problem-solving.</p>
+
+        {/* ASCII Spider */}
+        <pre className="ascii-art">
+{String.raw`
+         
+────▐──▌─────▐──▌────
+───▐▌─█───────█─▐▌───
+──▄█──▀▀▄▌▄▐▄▀▀──█▄──
+─▐█─▄█▀▄█████▄▀█▄─█▌─
+──▀▀─▄▄▄█████▄▄▄─▀▀──
+───▄█▀─▄▀███▀▄─▀█▄───
+─▄█──▄▀──███──▀▄──█▄─
+▐█───█───▐█▌───█───█▌
+─█────█───▀───█────█─
+─▀█───█───────█───█▀─
+──█────█─────█────█──
+───█───█─────█───█───
+────▌───▌───▐───▐────
+
+`}
+        </pre>
+      </div>
     </TerminalWindow>
   );
 }

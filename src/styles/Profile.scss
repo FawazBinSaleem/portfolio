@@ -1,4 +1,44 @@
-.highlight {
-    color: #ff0000;
-}
+.profile {
+  .command {
+    font-family: "IBM Plex Mono", monospace;
+    color: #e5e5e5;
+    margin-bottom: 0.5rem;
 
+    .prompt {
+      color: #ff0000; // Spider-Man red
+      margin-right: 0.3rem;
+    }
+  }
+
+  .output {
+    margin-left: 1.5rem;
+    color: #999;
+    font-family: "IBM Plex Mono", monospace;
+    line-height: 1.4;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .ascii-art {
+  color: #ff0000; // Spider-Man red
+  font-family: "Courier New", monospace;
+  line-height: 1.1;
+  white-space: pre;
+  margin-top: 1rem;
+  margin: 1rem auto 0 auto; // center horizontally, keep top margin
+  text-align: center;       // center the text inside <pre>
+  display: block;
+  transition: text-shadow 0.3s ease-in-out;
+
+  // Subtle glow on hover
+  &:hover {
+    text-shadow:
+      0 0 2px #ff0000,
+      0 0 4px #ff0000,
+      0 0 6px #1e90ff,
+      0 0 8px #1e90ff;
+  }
+}
+  }
+}
